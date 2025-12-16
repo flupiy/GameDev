@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс по игровым движкам</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Декоративные элементы -->
+    <div class="decoration" id="decoration"></div>
+
+    <!-- Навигация -->
+    <header>
+        <div class="logo">GAME DEV</div>
+        <button class="menu-btn" id="menuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="#" class="nav-link active" data-page="main"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="#" class="nav-link" data-page="about"><i class="fas fa-book"></i> О курсе</a></li>
+                <li><a href="#" class="nav-link" data-page="unity"><i class="fab fa-unity"></i> Unity</a></li>
+                <li><a href="#" class="nav-link" data-page="unreal"><i class="fas fa-bolt"></i> Unreal Engine</a></li>
+                <li><a href="#" class="nav-link" data-page="teachers"><i class="fas fa-chalkboard-teacher"></i> Преподаватели</a></li>
+                <li><a href="#" class="nav-link" data-page="contacts"><i class="fas fa-address-book"></i> Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главная страница -->
+    <div class="page active" id="main-page">
+        <!-- Герой секция - ИЗМЕНЕНО: центрированный контент и кнопка под текстом -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="glow-text" data-text="Курс по игровым движкам">Курс по игровым движкам</h1>
+                <p>ЭТОТ КУРС ПРЕДЛАГАЕТ МАКСИМАЛЬНО УПРОЩЁННОЕ И ДОСТУПНОЕ ПОГРУЖЕНИЕ В МИР РАЗРАБОТКИ ИГР, СОКУСИРУЯСЬ НА ДВУХ САМЫХ ПОПУЛЯРНЫХ И МОЩНЫХ ИГРОВЫХ ДВИЖКАХ: UNITY И UNREAL ENGINE. ОН РАЗРАБОТАН СПЕЦИАЛЬНО ДЛЯ НОВИЧКОВ И ТЕХ, КТО ХОЧЕТ БЫСТРО ОСВОИТЬ БАЗОВЫЕ ПРИНЦИПЫ СОЗДАНИЯ ИГР, НЕ УГЛАБЛЯЯСЬ В СЛОЖНЫЕ ТЕХНИЧЕСКИЕ ДЕТАЛИ.</p>
+                <a href="#" class="cta-button" id="main-cta">ЗАПИСАТЬСЯ</a>
+            </div>
+        </section>
+
+        <!-- Описание курса -->
+        <section id="description">
+            <h2 class="section-title">Описание курса и кому он подойдёт</h2>
+            <div class="course-description">
+                <p>Курс предназначен для абсолютных новичков в геймдеве, которые хотят получить базовые знания о двух самых популярных игровых движках: Unity и Unreal Engine. Вы научитесь создавать простые игровые сцены, добавлять объекты и взаимодействовать с ними, а также разрабатывать небольшие интерактивные прототипы игр.</p>
+                <p>Курс идеально подходит для тех, кто хочет быстро освоить ключевые навыки и приступить к созданию собственных проектов в кратчайшие сроки.</p>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section id="advantages">
+            <h2 class="section-title">Преимущества курса</h2>
+            <div class="advantages">
+                <div class="advantages-list">
+                    <div class="advantage-item">
+                        <h3><i class="fas fa-graduation-cap"></i> УПРОЩЁННЫЙ ПОДХОД</h3>
+                        <p>Материал изложен максимально понятно, что идеально подходит для абсолютных новичков в геймдеве.</p>
+                    </div>
+                    <div class="advantage-item">
+                        <h3><i class="fas fa-gamepad"></i> ДВА ДВИЖКА В ОДНОМ КУРСЕ</h3>
+                        <p>Вы получите базовые знания и опыт работы как с Unity, так и с Unreal Engine, что расширит ваши возможности и выбор в будущем.</p>
+                    </div>
+                    <div class="advantage-item">
+                        <h3><i class="fas fa-rocket"></i> БЫСТРЫЙ СТАРТ</h3>
+                        <p>Курс ориентирован на быстрое освоение ключевых навыков, позволяя вам приступить к созданию собственных проектов в кратчайшие сроки.</p>
+                    </div>
+                    <div class="advantage-item">
+                        <h3><i class="fas fa-laptop-code"></i> ПРАКТИЧЕСКАЯ НАПРАВЛЕННОСТЬ</h3>
+                        <p>Основное внимание уделяется практическим заданиям и созданию простых игровых элементов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Цели обучения -->
+        <section id="goals">
+            <h2 class="section-title">Цели обучения</h2>
+            <div class="goals">
+                <p>ПО ЗАВЕРШЕНИИ КУРСА ВЫ СМОЖЕТЕ:</p>
+                <div class="goals-list">
+                    <div class="goal-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Ориентироваться в интерфейсах и основных инструментах Unity и Unreal Engine.</h4>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Понимать базовые концепции игрового дизайна и разработки.</h4>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Создавать простые игровые сцены, добавлять объекты и взаимодействовать с ними.</h4>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Разрабатывать небольшие интерактивные прототипы игр.</h4>
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Получить крепкую основу для дальнейшего, более глубокого изучения геймдева и специализации на одном из движков.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Подвал главной страницы -->
+        <footer id="contacts">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Курс по игровым движкам</h3>
+                    <p>Максимально упрощённое и доступное погружение в мир разработки игр.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="nav-link" data-page="main"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a href="#" class="nav-link" data-page="about"><i class="fas fa-chevron-right"></i> О курсе</a></li>
+                        <li><a href="#" class="nav-link" data-page="teachers"><i class="fas fa-chevron-right"></i> Преподаватели</a></li>
+                        <li><a href="#" class="nav-link" data-page="contacts"><i class="fas fa-chevron-right"></i> Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-envelope"></i> info@gamedev-course.ru</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +7 (XXX) XXX-XX-XX</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Москва, Россия</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Курс по игровым движкам. Все права защищены.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Страница "О курсе" -->
+    <div class="page" id="about-page">
+        <main class="container">
+            <!-- Заголовок страницы -->
+            <div class="page-header">
+                <h1>Узнай всё о курсе!</h1>
+                <p>Самый крутой курс по созданию игр для подростков 10-16 лет. Учим создавать игры на Unity и Unreal Engine с нуля!</p>
+            </div>
+
+            <!-- Что такое Unity и Unreal Engine -->
+            <section class="course-section" id="engines">
+                <div class="section-title-about">
+                    <div class="section-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h2>Что такое Unity и Unreal Engine?</h2>
+                </div>
+                <div class="section-content">
+                    <p>Это самые популярные в мире программы для создания игр! Представь, что это как конструктор Lego, но для создания компьютерных игр.</p>
+                    
+                    <div class="engines-grid">
+                        <div class="engine-card unity">
+                            <h3><i class="fab fa-unity unity-icon"></i> Unity</h3>
+                            <p>Unity — это как волшебная коробка с инструментами, которая помогает создавать 2D и 3D игры. На Unity сделаны такие известные игры как <strong>Among Us</strong>, <strong>Pokémon GO</strong> и <strong>Monument Valley</strong>.</p>
+                            <ul>
+                                <li>Отлично подходит для 2D игр</li>
+                                <li>Много готовых бесплатных материалов</li>
+                                <li>Простой интерфейс для начинающих</li>
+                                <li>Идеален для мобильных игр</li>
+                                <li>Простое программирование на C#</li>
+                            </ul>
+                            
+                            <div class="engine-links">
+                                <a href="#" class="engine-link unity-link nav-link" data-page="unity">
+                                    <i class="fab fa-unity"></i> Подробнее о Unity
+                                </a>
+                                <a href="#" class="engine-link">
+                                    <i class="fas fa-gamepad"></i> Проекты на Unity
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="engine-card unreal">
+                            <h3><i class="fas fa-bolt unreal-icon"></i> Unreal Engine</h3>
+                            <p>Unreal Engine — это мощный инструмент для создания потрясающих 3D игр с крутой графикой. На нём сделаны такие хиты как <strong>Fortnite</strong>, <strong>Rocket League</strong> и многие другие.</p>
+                            <ul>
+                                <li>Супер-реалистичная графика</li>
+                                <li>Визуальное программирование Blueprints</li>
+                                <li>Отлично подходит для 3D игр</li>
+                                <li>Профессиональный уровень качества</li>
+                                <li>Мощные визуальные эффекты</li>
+                            </ul>
+                            
+                            <div class="engine-links">
+                                <a href="#" class="engine-link unreal-link nav-link" data-page="unreal">
+                                    <i class="fas fa-bolt"></i> Подробнее о Unreal
+                                </a>
+                                <a href="#" class="engine-link">
+                                    <i class="fas fa-gamepad"></i> Проекты на Unreal
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255, 215, 0, 0.05); border-radius: 10px; border-left: 4px solid #FFD700;">
+                        <p><strong>Важно:</strong> На нашем курсе ты научишься работать с обоими движками! Это поможет тебе понять, какой из них нравится больше, и выбрать направление для углубленного изучения.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Для кого подходит курс -->
+            <section class="course-section" id="for-whom">
+                <div class="section-title-about">
+                    <div class="section-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h2>Для кого подходит курс?</h2>
+                </div>
+                <div class="section-content">
+                    <p>Наш курс создан специально для подростков 10-16 лет, которые хотят научиться создавать свои собственные игры!</p>
+                    
+                    <div class="age-container">
+                        <div class="age-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="age-info">
+                            <h3 style="color: #FFD700; margin-bottom: 1rem;">Идеально для возраста 10-16 лет!</h3>
+                            <p>Курс подходит для ребят, которые:</p>
+                            <ul>
+                                <li>Любят играть в компьютерные игры</li>
+                                <li>Хотят узнать, как создаются игры</li>
+                                <li>Любят рисовать и придумывать истории</li>
+                                <li>Интересуются технологиями и компьютерами</li>
+                                <li>Хотят научиться чему-то новому и полезному</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-top: 2rem;"><strong>Не нужно никаких специальных знаний!</strong> Мы начинаем с самых азов и шаг за шагом научим тебя всему, что нужно знать для создания своей первой игры.</p>
+                </div>
+            </section>
+
+            <!-- Какие навыки вы получите -->
+            <section class="course-section" id="skills">
+                <div class="section-title-about">
+                    <div class="section-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h2>Какие навыки вы получите?</h2>
+                </div>
+                <div class="section-content">
+                    <p>После прохождения курса ты сможешь создавать свои собственные игры и получишь ценные навыки:</p>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-desktop"></i>
+                            <div>
+                                <h4>Работать в Unity и Unreal Engine</h4>
+                                <p>Научишься ориентироваться в интерфейсе игровых движков.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fas fa-cube"></i>
+                            <div>
+                                <h4>Создавать 3D-модели и уровни</h4>
+                                <p>Сможешь создавать персонажей и игровые миры.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Основы программирования</h4>
+                                <p>Познакомишься с основами C# и визуального программирования.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fas fa-gamepad"></i>
+                            <div>
+                                <h4>Создавать геймплей</h4>
+                                <p>Научишься добавлять правила игры и управление персонажами.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <div>
+                                <h4>Работать с графикой</h4>
+                                <p>Узнаешь, как создавать анимации и визуальные эффекты.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <div>
+                                <h4>Разрабатывать игровые проекты</h4>
+                                <p>Получишь опыт создания полного игрового проекта.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <a href="#" class="engine-link" style="display: inline-flex; max-width: 300px;">
+                            <i class="fas fa-graduation-cap"></i> Подробнее о навыках
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Формат обучения -->
+            <section class="course-section" id="format">
+                <div class="section-title-about">
+                    <div class="section-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h2>Формат обучения</h2>
+                </div>
+                <div class="section-content">
+                    <p>Мы используем современный и увлекательный формат обучения, который идеально подходит для подростков!</p>
+                    
+                    <div class="format-grid">
+                        <div class="format-card">
+                            <div class="format-number">1</div>
+                            <i class="fas fa-video"></i>
+                            <h3>Видеоуроки</h3>
+                            <p>Короткие и понятные видеоуроки с пошаговыми инструкциями. Можно смотреть в любое время!</p>
+                        </div>
+                        
+                        <div class="format-card">
+                            <div class="format-number">2</div>
+                            <i class="fas fa-keyboard"></i>
+                            <h3>Практика</h3>
+                            <p>После каждого урока — практическое задание, где ты сразу применяешь новые знания.</p>
+                        </div>
+                        
+                        <div class="format-card">
+                            <div class="format-number">3</div>
+                            <i class="fas fa-tasks"></i>
+                            <h3>Проекты</h3>
+                            <p>Ты создашь 4 игровых проекта: аркаду, платформер, 3D-приключение и свою собственную игру!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="support-box">
+                        <h3><i class="fas fa-comments"></i> Поддержка преподавателей</h3>
+                        <p>У тебя будет доступ к чату с преподавателями и другими учениками. Можно задавать вопросы, делиться идеями и получать помощь в любое время!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Призыв к действию -->
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h2>Готов создать свою первую игру?</h2>
+                    <p>Присоединяйся к нашему курсу и начни свой путь в мир разработки игр уже сегодня! Ты научишься создавать собственные игры, получишь ценные навыки и, возможно, найдешь свое будущее призвание.</p>
+                    <a href="#" class="cta-button" id="about-cta">Записаться на курс</a>
+                    <div style="margin-top: 2rem;">
+                        <p style="font-size: 1rem; color: #FFD700;">
+                            <i class="fas fa-info-circle"></i> Хочешь узнать больше? Посмотри страницы про <a href="#" class="nav-link" data-page="unity" style="color: #FFD700; text-decoration: underline;">Unity</a> и <a href="#" class="nav-link" data-page="unreal" style="color: #FFA500; text-decoration: underline;">Unreal Engine</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Подвал -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GameDev Junior</h3>
+                    <p>Курсы по разработке игр для подростков 10-16 лет. Учим создавать игры на Unity и Unreal Engine.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="nav-link" data-page="main"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a href="#" class="nav-link" data-page="about"><i class="fas fa-chevron-right"></i> О курсе</a></li>
+                        <li><a href="#" class="nav-link" data-page="unity"><i class="fas fa-chevron-right"></i> Unity</a></li>
+                        <li><a href="#" class="nav-link" data-page="unreal"><i class="fas fa-chevron-right"></i> Unreal Engine</a></li>
+                        <li><a href="#" class="nav-link" data-page="teachers"><i class="fas fa-chevron-right"></i> Преподаватели</a></li>
+                        <li><a href="#" class="nav-link" data-page="contacts"><i class="fas fa-chevron-right"></i> Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-envelope"></i> hello@gamedevjunior.ru</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +7 (800) 123-45-67</a></li>
+                        <li><a href="#"><i class="fab fa-vk"></i> Мы ВКонтакте</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 GameDev Junior. Все права защищены. Курс для подростков 10-16 лет.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Страница Unity -->
+    <div class="page" id="unity-page">
+        <main class="container">
+            <!-- Заголовок страницы -->
+            <div class="page-header">
+                <h1>
+                    <i class="fab fa-unity"></i>
+                    Unity
+                </h1>
+                <p>Самый популярный игровой движок для начинающих разработчиков. Идеален для создания 2D и 3D игр на любые платформы!</p>
+            </div>
+
+            <!-- Основная информация о Unity -->
+            <div class="unity-info">
+                <div class="unity-description" id="unityDescription">
+                    <h2><i class="fas fa-info-circle"></i> Что такое Unity?</h2>
+                    <p>Unity — это мощный кроссплатформенный игровой движок, который позволяет создавать игры для компьютеров, консолей, мобильных устройств и даже веб-браузеров. Благодаря своему удобному интерфейсу и обширной документации, Unity идеально подходит для начинающих разработчиков.</p>
+                    
+                    <p>Движок был создан в 2005 году и с тех пор завоевал огромную популярность среди инди-разработчиков и крупных студий. Unity использует язык программирования C#, который считается одним из лучших для начинающих благодаря своей понятности и безопасности.</p>
+                    
+                    <p>Одна из главных особенностей Unity — Asset Store, огромный магазин готовых ассетов (3D-моделей, текстур, звуков, скриптов), которые можно использовать в своих проектах. Это значительно ускоряет разработку!</p>
+                    
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255, 215, 0, 0.05); border-radius: 10px; border-left: 4px solid #FF8C00;">
+                        <p><strong>Интересный факт:</strong> Более 50% всех мобильных игр созданы на Unity! Также на Unity сделаны такие хиты как Among Us, Pokémon GO, Cuphead и Monument Valley.</p>
+                    </div>
+                </div>
+                
+                <div class="unity-visual" id="unityVisual">
+                    <div class="unity-logo">
+                        <i class="fab fa-unity"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Преимущества Unity -->
+            <div class="advantages-section" id="advantagesSection">
+                <h2 class="section-title"><i class="fas fa-star"></i> Почему выбирают Unity?</h2>
+                
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Простота изучения</h3>
+                        <p>Unity имеет интуитивно понятный интерфейс и отличную документацию. Идеально подходит для тех, кто только начинает свой путь в геймдеве.</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Кроссплатформенность</h3>
+                        <p>Создавайте игры для PC, Mac, iOS, Android, консолей и веба одним кликом. Unity поддерживает более 25 платформ!</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>Asset Store</h3>
+                        <p>Огромный магазин готовых ресурсов: 3D-модели, текстуры, звуки, скрипты. Ускоряет разработку в разы!</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Большое комьюнити</h3>
+                        <p>Миллионы разработчиков по всему миру, тысячи уроков на YouTube и активные форумы. Помощь всегда рядом!</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Язык C#</h3>
+                        <p>C# — современный, безопасный и понятный язык программирования. Отлично подходит для обучения основам кодинга.</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Бесплатен для обучения</h3>
+                        <p>Unity Personal полностью бесплатен, пока ваш доход не превышает $100k в год. Идеально для начинающих!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Популярные игры на Unity -->
+            <div class="games-section" id="gamesSection">
+                <h2 class="section-title"><i class="fas fa-gamepad"></i> Известные игры на Unity</h2>
+                
+                <div class="games-grid">
+                    <div class="game-card">
+                        <div class="game-image">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="game-info">
+                            <h3>Among Us</h3>
+                            <p>Мультиплеерная социальная игра, которая покорила весь мир. Проста в исполнении, но невероятно увлекательна.</p>
+                            <div class="game-platforms">
+                                <span class="platform-tag">PC</span>
+                                <span class="platform-tag">Mobile</span>
+                                <span class="platform-tag">Console</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card">
+                        <div class="game-image">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <div class="game-info">
+                            <h3>Pokémon GO</h3>
+                            <p>Мобильная игра с дополненной реальностью, которая вывела людей на улицы по всему миру.</p>
+                            <div class="game-platforms">
+                                <span class="platform-tag">Mobile</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card">
+                        <div class="game-image">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <div class="game-info">
+                            <h3>Cuphead</h3>
+                            <p>Сложный платформер в стиле старых мультфильмов 1930-х годов. Потрясающая анимация и геймплей.</p>
+                            <div class="game-platforms">
+                                <span class="platform-tag">PC</span>
+                                <span class="platform-tag">Console</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card">
+                        <div class="game-image">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <div class="game-info">
+                            <h3>Monument Valley</h3>
+                            <p>Невероятно красивая головоломка с оптическими иллюзиями. Шедевр мобильного геймдева.</p>
+                            <div class="game-platforms">
+                                <span class="platform-tag">Mobile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- С чего начать -->
+            <div class="getting-started" id="gettingStarted">
+                <h2 class="section-title"><i class="fas fa-rocket"></i> Как начать работать с Unity?</h2>
+                
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <i class="fas fa-download"></i>
+                        <h3>Скачать Unity Hub</h3>
+                        <p>Установите Unity Hub — программу для управления версиями Unity и проектами.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <i class="fas fa-cube"></i>
+                        <h3>Установить Unity</h3>
+                        <p>Через Unity Hub установите последнюю версию Unity (выберите версию LTS для стабильности).</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <i class="fas fa-code"></i>
+                        <h3>Установить Visual Studio</h3>
+                        <p>Скачайте бесплатный Visual Studio Community для написания кода на C#.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <i class="fas fa-play-circle"></i>
+                        <h3>Создать первый проект</h3>
+                        <p>Запустите Unity, создайте новый 3D или 2D проект и начните творить!</p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 3rem; text-align: center;">
+                    <a href="https://unity.com/download" target="_blank" class="cta-button" style="font-size: 1.1rem; padding: 1rem 2rem;">
+                        <i class="fas fa-external-link-alt"></i> Скачать Unity бесплатно
+                    </a>
+                </div>
+            </div>
+
+            <!-- Сравнение Unity и Unreal -->
+            <div class="comparison-section" id="comparisonSection">
+                <h2 class="section-title"><i class="fas fa-balance-scale"></i> Unity vs Unreal Engine</h2>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Критерий</th>
+                            <th>Unity</th>
+                            <th>Unreal Engine</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Сложность изучения</td>
+                            <td class="unity-cell">Легче для новичков</td>
+                            <td class="unreal-cell">Сложнее, больше возможностей</td>
+                        </tr>
+                        <tr>
+                            <td>Язык программирования</td>
+                            <td class="unity-cell">C# (проще для обучения)</td>
+                            <td class="unreal-cell">C++ и Blueprints</td>
+                        </tr>
+                        <tr>
+                            <td>2D игры</td>
+                            <td class="unity-cell">Отлично подходит</td>
+                            <td class="unreal-cell">Подходит, но лучше для 3D</td>
+                        </tr>
+                        <tr>
+                            <td>3D графика</td>
+                            <td class="unity-cell">Хорошая, постоянно улучшается</td>
+                            <td class="unreal-cell">Лучшая в индустрии</td>
+                        </tr>
+                        <tr>
+                            <td>Мобильные платформы</td>
+                            <td class="unity-cell">Оптимизирован лучше</td>
+                            <td class="unreal-cell">Поддерживается</td>
+                        </tr>
+                        <tr>
+                            <td>Для начинающих (10-16 лет)</td>
+                            <td class="unity-cell">Идеальный выбор</td>
+                            <td class="unreal-cell">Можно попробовать</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255, 215, 0, 0.05); border-radius: 10px; text-align: center;">
+                    <p><strong>Рекомендация для начинающих:</strong> Если тебе 10-16 лет и ты только начинаешь свой путь в геймдеве — выбирай Unity! Он проще, имеет больше учебных материалов для новичков и идеально подходит для создания первых проектов.</p>
+                </div>
+            </div>
+
+            <!-- Призыв к действию -->
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h2>Готов создавать игры на Unity?</h2>
+                    <p>Присоединяйся к нашему курсу и научись создавать собственные игры на самом популярном движке для начинающих! Наши преподаватели помогут тебе освоить Unity с нуля и создать первую игру уже через месяц.</p>
+                    <a href="#" class="cta-button" id="unity-cta">Начать изучать Unity</a>
+                    <div style="margin-top: 2rem;">
+                        <p style="font-size: 1rem; color: #FFD700;">
+                            <i class="fas fa-info-circle"></i> Хочешь узнать про другой движок? Посмотри страницу про <a href="#" class="nav-link" data-page="unreal" style="color: #FF8C00; text-decoration: underline;">Unreal Engine</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Подвал -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GameDev Junior</h3>
+                    <p>Курсы по разработке игр для подростков 10-16 лет. Учим создавать игры на Unity и Unreal Engine.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="nav-link" data-page="main"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a href="#" class="nav-link" data-page="about"><i class="fas fa-chevron-right"></i> О курсе</a></li>
+                        <li><a href="#" class="nav-link" data-page="unity"><i class="fas fa-chevron-right"></i> Unity</a></li>
+                        <li><a href="#" class="nav-link" data-page="unreal"><i class="fas fa-chevron-right"></i> Unreal Engine</a></li>
+                        <li><a href="#" class="nav-link" data-page="teachers"><i class="fas fa-chevron-right"></i> Преподаватели</a></li>
+                        <li><a href="#" class="nav-link" data-page="contacts"><i class="fas fa-chevron-right"></i> Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Полезные ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://unity.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Официальный сайт Unity</a></li>
+                        <li><a href="https://learn.unity.com/" target="_blank"><i class="fas fa-graduation-cap"></i> Обучающие материалы Unity</a></li>
+                        <li><a href="https://assetstore.unity.com/" target="_blank"><i class="fas fa-store"></i> Unity Asset Store</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 GameDev Junior. Все права защищены. Курс для подростков 10-16 лет.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Страница Unreal Engine -->
+    <div class="page" id="unreal-page">
+        <main class="container">
+            <!-- Заголовок страницы -->
+            <div class="page-header">
+                <h1>Unreal Engine</h1>
+                <p>Самый мощный движок для создания игр с потрясающей графикой! Создавай игры как в Голливуде!</p>
+            </div>
+
+            <!-- Герой-секция Unreal -->
+            <section class="unreal-hero" id="unrealHero">
+                <div class="hero-content-unreal">
+                    <div class="hero-icon">
+                        <div class="unreal-icon-large">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                    </div>
+                    <div class="hero-text">
+                        <h2>Добро пожаловать в мир Unreal Engine!</h2>
+                        <p>Unreal Engine — это профессиональный игровой движок от компании Epic Games, который позволяет создавать игры с графикой кинематографического уровня. На нём сделаны такие хиты как Fortnite, Gears of War и многие другие AAA-проекты.</p>
+                        <p>Лучший выбор для создания 3D игр с потрясающей графикой и реалистичными эффектами!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Что такое Unreal Engine -->
+            <section class="info-section" id="whatIsUnreal">
+                <div class="section-title-unreal">
+                    <div class="section-icon-unreal">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h2>Что такое Unreal Engine?</h2>
+                </div>
+                <div class="section-content">
+                    <p>Unreal Engine — это мощный и современный движок для разработки игр, который позволяет создавать проекты любого масштаба: от мобильных игр до консольных AAA-хитов с графикой кинематографического уровня.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h3><i class="fas fa-tv"></i> Потрясающая графика</h3>
+                            <p>Unreal Engine славится своей графикой. Движок поддерживает трассировку лучей в реальном времени, глобальное освещение и фотореалистичные материалы.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <h3><i class="fas fa-puzzle-piece"></i> Blueprints</h3>
+                            <p>Уникальная система визуального программирования, которая позволяет создавать игровую логику без написания кода! Идеально подходит для начинающих.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <h3><i class="fas fa-users"></i> Бесплатный для обучения</h3>
+                            <p>Unreal Engine полностью бесплатен для обучения и создания некоммерческих проектов. Платить нужно только если твоя игра заработает больше $1 миллиона!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Игры на Unreal Engine -->
+            <section class="info-section" id="unrealGames">
+                <div class="section-title-unreal">
+                    <div class="section-icon-unreal">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h2>Известные игры на Unreal Engine</h2>
+                </div>
+                <div class="section-content">
+                    <p>Unreal Engine используют самые крупные игровые студии мира. Вот лишь несколько примеров известных игр, созданных на этом движке:</p>
+                    
+                    <div class="games-grid">
+                        <div class="game-card">
+                            <div class="game-image">
+                                <i class="fas fa-ghost"></i>
+                            </div>
+                            <div class="game-info">
+                                <h3>Fortnite</h3>
+                                <p>Самая популярная игра в мире! Королевская битва с миллионами игроков ежедневно.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="game-card">
+                            <div class="game-image">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="game-info">
+                                <h3>Rocket League</h3>
+                                <p>Футбол на ракетных автомобилях! Невероятно динамичная и популярная игра.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="game-card">
+                            <div class="game-image">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="game-info">
+                                <h3>Gears of War</h3>
+                                <p>Культовая серия шутеров, которая задала стандарты для жанра third-person shooter.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="game-card">
+                            <div class="game-image">
+                                <i class="fas fa-dragon"></i>
+                            </div>
+                            <div class="game-info">
+                                <h3>Dragon Quest XI</h3>
+                                <p>Одна из лучших JRPG современности с потрясающей графикой и увлекательным сюжетом.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blueprints визуальное программирование -->
+            <section class="blueprints-section" id="blueprints">
+                <div class="blueprints-content">
+                    <div class="blueprints-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="blueprints-text">
+                        <h2 style="color: #FF8C00; font-size: 2.2rem; margin-bottom: 1.5rem;">Blueprints — программирование без кода!</h2>
+                        <p style="font-size: 1.2rem; color: #e0e0c0; margin-bottom: 1.5rem;">Система Blueprints позволяет создавать игровую логику с помощью визуальных блоков. Просто соединяй блоки как пазл — и твоя игра оживает!</p>
+                        <ul style="color: #e0e0c0; padding-left: 1.5rem;">
+                            <li>Никакого сложного кода</li>
+                            <li>Идеально для начинающих</li>
+                            <li>Можно создавать сложные игры</li>
+                            <li>Отлично работает вместе с C++</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Что вы научитесь делать -->
+            <section class="info-section" id="learnUnreal">
+                <div class="section-title-unreal">
+                    <div class="section-icon-unreal">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h2>Что вы научитесь делать на курсе?</h2>
+                </div>
+                <div class="section-content">
+                    <p>На нашем курсе по Unreal Engine ты освоишь все ключевые навыки для создания собственных 3D игр:</p>
+                    
+                    <div class="learn-grid">
+                        <div class="learn-item">
+                            <i class="fas fa-cube"></i>
+                            <div>
+                                <h4>Создавать 3D миры</h4>
+                                <p>Научишься строить красивые и детализированные игровые уровни.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="learn-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <h4>Анимировать персонажей</h4>
+                                <p>Сможешь оживить своих героев с помощью продвинутой системы анимации.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="learn-item">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <h4>Создавать визуальные эффекты</h4>
+                                <p>Научишься добавлять взрывы, магию, частицы и другие эффекты.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="learn-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <div>
+                                <h4>Работать с Blueprints</h4>
+                                <p>Освоишь визуальное программирование для создания игровой логики.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="learn-item">
+                            <i class="fas fa-sun"></i>
+                            <div>
+                                <h4>Настраивать освещение</h4>
+                                <p>Поймешь, как сделать сцену красивой с помощью глобального освещения.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="learn-item">
+                            <i class="fas fa-gamepad"></i>
+                            <div>
+                                <h4>Создавать геймплей</h4>
+                                <p>Научишься добавлять управление, физику и взаимодействия объектов.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Системные требования -->
+            <section class="info-section" id="requirements">
+                <div class="section-title-unreal">
+                    <div class="section-icon-unreal">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h2>Системные требования</h2>
+                </div>
+                <div class="section-content">
+                    <p>Для работы с Unreal Engine нужен достаточно мощный компьютер. Вот минимальные требования:</p>
+                    
+                    <div class="requirements-grid">
+                        <div class="requirement-card">
+                            <h3><i class="fas fa-microchip"></i> Минимальные требования</h3>
+                            <ul>
+                                <li>Windows 10 64-bit</li>
+                                <li>Процессор: Quad-core Intel или AMD</li>
+                                <li>8 ГБ оперативной памяти</li>
+                                <li>Видеокарта: DirectX 11 или 12</li>
+                                <li>20 ГБ свободного места</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="requirement-card">
+                            <h3><i class="fas fa-rocket"></i> Рекомендуемые требования</h3>
+                            <ul>
+                                <li>Windows 10 64-bit (последняя версия)</li>
+                                <li>Процессор: Intel Core i7 или лучше</li>
+                                <li>16 ГБ оперативной памяти</li>
+                                <li>Видеокарта: NVIDIA RTX 2060 или лучше</li>
+                                <li>SSD диск, 50+ ГБ свободного места</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-top: 2rem; padding: 1rem; background: rgba(255, 140, 0, 0.1); border-radius: 10px; border-left: 4px solid #FF8C00;">
+                        <strong>Важно:</strong> Unreal Engine требователен к железу, но для обучения на нашем курсе подойдет компьютер со средними характеристиками. Мы поможем с оптимизацией!
+                    </p>
+                </div>
+            </section>
+
+            <!-- Сравнение с Unity -->
+            <section class="comparison-section" id="comparison">
+                <div class="section-title-unreal">
+                    <div class="section-icon-unreal">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h2>Unreal Engine vs Unity: что выбрать?</h2>
+                </div>
+                <div class="section-content">
+                    <p>Оба движка отличные, но у каждого свои сильные стороны. Вот краткое сравнение:</p>
+                    
+                    <div class="comparison-table-unreal">
+                        <div class="comparison-column">
+                            <h3><i class="fas fa-bolt"></i> Unreal Engine</h3>
+                            <ul>
+                                <li>Лучшая графика и визуальные эффекты</li>
+                                <li>Blueprints — программирование без кода</li>
+                                <li>Идеален для 3D игр и AAA-проектов</li>
+                                <li>Бесплатный до первого $1 млн дохода</li>
+                                <li>Сложнее для начинающих</li>
+                                <li>Требователен к компьютеру</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="comparison-column">
+                            <h3><i class="fab fa-unity"></i> Unity</h3>
+                            <ul>
+                                <li>Проще для начинающих</li>
+                                <li>Отлично подходит для 2D и мобильных игр</li>
+                                <li>Программирование на C#</li>
+                                <li>Меньше требований к компьютеру</li>
+                                <li>Бесплатный для обучения</li>
+                                <li>Графика проще, чем в Unreal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-top: 2rem; text-align: center; color: #FF8C00; font-weight: bold;">
+                        <i class="fas fa-lightbulb"></i> Наш совет: попробуй оба движка на нашем курсе и реши, какой нравится больше!
+                    </p>
+                </div>
+            </section>
+
+            <!-- Призыв к действию -->
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h2>Готов создавать игры как в Голливуде?</h2>
+                    <p>Присоединяйся к нашему курсу по Unreal Engine! Мы научим тебя создавать потрясающие 3D игры с графикой кинематографического уровня. Blueprints сделают программирование простым и понятным!</p>
+                    <a href="#" class="cta-button" id="unreal-cta">Начать учить Unreal Engine</a>
+                    <div style="margin-top: 2rem;">
+                        <p style="font-size: 1rem; color: #FFD700;">
+                            <i class="fas fa-info-circle"></i> Не уверен, что выбрать? Посмотри страницу про <a href="#" class="nav-link" data-page="unity" style="color: #FFD700; text-decoration: underline;">Unity</a> или прочитай <a href="#" class="nav-link" data-page="about" style="color: #FFA500; text-decoration: underline;">сравнение движков</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Подвал -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GameDev Junior</h3>
+                    <p>Курсы по разработке игр для подростков 10-16 лет. Учим создавать игры на Unity и Unreal Engine.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="nav-link" data-page="main"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a href="#" class="nav-link" data-page="about"><i class="fas fa-chevron-right"></i> О курсе</a></li>
+                        <li><a href="#" class="nav-link" data-page="unity"><i class="fas fa-chevron-right"></i> Unity</a></li>
+                        <li><a href="#" class="nav-link" data-page="unreal"><i class="fas fa-chevron-right"></i> Unreal Engine</a></li>
+                        <li><a href="#" class="nav-link" data-page="teachers"><i class="fas fa-chevron-right"></i> Преподаватели</a></li>
+                        <li><a href="#" class="nav-link" data-page="contacts"><i class="fas fa-chevron-right"></i> Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Полезные ресурсы</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-download"></i> Скачать Unreal Engine</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> Документация Unreal</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> Видеоуроки по Unreal</a></li>
+                        <li><a href="#"><i class="fas fa-users"></i> Сообщество разработчиков</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 GameDev Junior. Все права защищены. Курс для подростков 10-16 лет.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.8rem; color: #888;">Unreal Engine является торговой маркой Epic Games, Inc.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Страница преподавателей -->
+    <div class="page" id="teachers-page">
+        <main class="container">
+            <!-- Заголовок страницы -->
+            <div class="page-header">
+                <h1>Наши преподаватели</h1>
+                <p>Познакомьтесь с нашими экспертами по разработке игр! Они научат вас создавать крутые проекты на Unity и Unreal Engine.</p>
+            </div>
+
+            <!-- Сетка преподавателей -->
+            <div class="teachers-grid">
+                <!-- Преподаватель 1: Unity эксперт -->
+                <div class="teacher-card" id="teacher1">
+                    <div class="teacher-header">
+                        <div class="teacher-avatar">
+                            <div class="avatar-placeholder">
+                                АМ
+                            </div>
+                        </div>
+                        <h2 class="teacher-name">Алексей Морозов</h2>
+                        <p class="teacher-title">Ведущий разработчик Unity</p>
+                        <span class="teacher-specialty">Специализация: 2D/3D игры, мобильная разработка</span>
+                        
+                        <div class="experience-bar">
+                            <div class="experience-fill" style="width: 90%;" data-width="90"></div>
+                        </div>
+                        <div style="font-size: 0.9rem; color: #FFA500; margin-top: 0.5rem;">Опыт: 8 лет</div>
+                    </div>
+                    
+                    <div class="teacher-body">
+                        <div class="teacher-bio">
+                            <p>Алексей создал более 30 игр на Unity, включая мобильные хиты с миллионами скачиваний. Он начал заниматься разработкой игр в 15 лет и знает, как объяснить сложные концепции простым языком.</p>
+                            <p>Работал в нескольких игровых студиях, сейчас руководит собственной инди-студией. Любит обучать детей и подростков, потому что сам начинал в этом возрасте.</p>
+                        </div>
+                        
+                        <div class="teacher-skills">
+                            <h3 class="skills-title"><i class="fas fa-tools"></i> Ключевые навыки</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag">Unity Engine</span>
+                                <span class="skill-tag">C# программирование</span>
+                                <span class="skill-tag">2D/3D графика</span>
+                                <span class="skill-tag">Мобильная разработка</span>
+                                <span class="skill-tag">UI/UX дизайн</span>
+                                <span class="skill-tag">Оптимизация</span>
+                            </div>
+                        </div>
+                        
+                        <div class="teacher-contacts">
+                            <h3 class="contacts-title"><i class="fas fa-envelope"></i> Контакты</h3>
+                            <div class="contacts-list">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email: <a href="mailto:alexey@example.com" class="contact-link">alexey@gamedev.ru</a></span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fab fa-vk"></i>
+                                    <span>ВКонтакте: <a href="#" class="contact-link">vk.com/alexey_morozov</a></span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub: <a href="#" class="contact-link">github.com/alexey-morozov</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="teacher-quote">
+                            <p class="quote-text">Самое крутое в разработке игр — видеть, как твои идеи оживают на экране. Я научу тебя не просто кодить, а создавать миры, в которые захочется возвращаться снова и снова!</p>
+                            <p class="quote-author">— Алексей Морозов</p>
+                        </div>
+                        
+                        <a href="#" class="ask-button" data-teacher="Алексей Морозов">
+                            <i class="fas fa-comment-dots"></i> Задать вопрос Алексею
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Преподаватель 2: Unreal Engine эксперт -->
+                <div class="teacher-card" id="teacher2">
+                    <div class="teacher-header">
+                        <div class="teacher-avatar">
+                            <div class="avatar-placeholder">
+                                КВ
+                            </div>
+                        </div>
+                        <h2 class="teacher-name">Кирилл Волков</h2>
+                        <p class="teacher-title">Эксперт по Unreal Engine</p>
+                        <span class="teacher-specialty">Специализация: 3D графика, визуальные эффекты</span>
+                        
+                        <div class="experience-bar">
+                            <div class="experience-fill" style="width: 85%;" data-width="85"></div>
+                        </div>
+                        <div style="font-size: 0.9rem; color: #FFA500; margin-top: 0.5rem;">Опыт: 6 лет</div>
+                    </div>
+                    
+                    <div class="teacher-body">
+                        <div class="teacher-bio">
+                            <p>Кирилл специализируется на создании потрясающих 3D миров и визуальных эффектах в Unreal Engine. Он работал над несколькими коммерческими проектами, включая инди-игры и архитектурную визуализацию.</p>
+                            <p>Считает, что любой подросток может освоить Unreal Engine благодаря системе Blueprints, которая позволяет программировать без написания кода. Обожает показывать, как создать игру, похожую на голливудский блокбастер.</p>
+                        </div>
+                        
+                        <div class="teacher-skills">
+                            <h3 class="skills-title"><i class="fas fa-tools"></i> Ключевые навыки</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag">Unreal Engine 5</span>
+                                <span class="skill-tag">Blueprints</span>
+                                <span class="skill-tag">3D моделирование</span>
+                                <span class="skill-tag">Визуальные эффекты</span>
+                                <span class="skill-tag">Материалы и шейдеры</span>
+                                <span class="skill-tag">Оптимизация графики</span>
+                            </div>
+                        </div>
+                        
+                        <div class="teacher-contacts">
+                            <h3 class="contacts-title"><i class="fas fa-envelope"></i> Контакты</h3>
+                            <div class="contacts-list">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email: <a href="mailto:kirill@example.com" class="contact-link">kirill@gamedev.ru</a></span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>YouTube: <a href="#" class="contact-link">youtube.com/kirill_volkov</a></span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fab fa-artstation"></i>
+                                    <span>ArtStation: <a href="#" class="contact-link">artstation.com/kirill_volkov</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="teacher-quote">
+                            <p class="quote-text">Unreal Engine — это как волшебная палочка для создания миров. Я покажу тебе, как превратить свои фантазии в реальность с помощью самых современных технологий!</p>
+                            <p class="quote-author">— Кирилл Волков</p>
+                        </div>
+                        
+                        <a href="#" class="ask-button" data-teacher="Кирилл Волков">
+                            <i class="fas fa-comment-dots"></i> Задать вопрос Кириллу
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Преподаватель 3: Геймдизайнер -->
+                <div class="teacher-card" id="teacher3">
+                    <div class="teacher-header">
+                        <div class="teacher-avatar">
+                            <div class="avatar-placeholder">
+                                МС
+                            </div>
+                        </div>
+                        <h2 class="teacher-name">Мария Семёнова</h2>
+                        <p class="teacher-title">Геймдизайнер и сценарист</p>
+                        <span class="teacher-specialty">Специализация: дизайн игр, нарратив, механики</span>
+                        
+                        <div class="experience-bar">
+                            <div class="experience-fill" style="width: 80%;" data-width="80"></div>
+                        </div>
+                        <div style="font-size: 0.9rem; color: #FFA500; margin-top: 0.5rem;">Опыт: 7 лет</div>
+                    </div>
+                    
+                    <div class="teacher-body">
+                        <div class="teacher-bio">
+                            <p>Мария отвечает за то, чтобы игры были не только красивыми, но и интересными. Она разрабатывает игровые механики, придумывает сюжеты и создаёт персонажей, которые запоминаются надолго.</p>
+                            <p>Работала над сценариями для нескольких успешных инди-игр. Учит не просто создавать игры, а наполнять их смыслом и эмоциями. Считает, что хорошая игра — это история, которую хочется прожить.</p>
+                        </div>
+                        
+                        <div class="teacher-skills">
+                            <h3 class="skills-title"><i class="fas fa-tools"></i> Ключевые навыки</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag">Геймдизайн</span>
+                                <span class="skill-tag">Сценаристика</span>
+                                <span class="skill-tag">Дизайн персонажей</span>
+                                <span class="skill-tag">Балансировка игр</span>
+                                <span class="skill-tag">Прототипирование</span>
+                                <span class="skill-tag">Психология игрока</span>
+                            </div>
+                        </div>
+                        
+                        <div class="teacher-contacts">
+                            <h3 class="contacts-title"><i class="fas fa-envelope"></i> Контакты</h3>
+                            <div class="contacts-list">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email: <a href="mailto:maria@example.com" class="contact-link">maria@gamedev.ru</a></span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fab fa-telegram"></i>
+                                    <span>Telegram: <a href="#" class="contact-link">@maria_gamedesign</a></span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-pencil-alt"></i>
+                                    <span>Блог: <a href="#" class="contact-link">gamedesign-stories.ru</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="teacher-quote">
+                            <p class="quote-text">Игра — это не просто графика и код. Это эмоции, истории и приключения. Я научу тебя создавать миры, в которые игроки будут влюбляться с первой секунды!</p>
+                            <p class="quote-author">— Мария Семёнова</p>
+                        </div>
+                        
+                        <a href="#" class="ask-button" data-teacher="Мария Семёнова">
+                            <i class="fas fa-comment-dots"></i> Задать вопрос Марии
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Секция "Почему наши преподаватели?" -->
+            <div class="why-teachers" id="whyTeachers">
+                <h2 class="why-title"><i class="fas fa-star"></i> Почему наши преподаватели?</h2>
+                
+                <div class="advantages-grid-teachers">
+                    <div class="advantage-item-teachers">
+                        <div class="advantage-icon-teachers">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Практический опыт</h3>
+                        <p>Все преподаватели — практикующие разработчики с реальными проектами в портфолио. Они учат тому, что действительно применяют в работе.</p>
+                    </div>
+                    
+                    <div class="advantage-item-teachers">
+                        <div class="advantage-icon-teachers">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Любовь к преподаванию</h3>
+                        <p>Наши эксперты не просто умеют создавать игры — они умеют учить этому других. Особенно они любят работать с подростками.</p>
+                    </div>
+                    
+                    <div class="advantage-item-teachers">
+                        <div class="advantage-icon-teachers">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Постоянная поддержка</h3>
+                        <p>Вы можете задавать вопросы преподавателям в любое время. Они всегда на связи и готовы помочь с любыми сложностями.</p>
+                    </div>
+                    
+                    <div class="advantage-item-teachers">
+                        <div class="advantage-icon-teachers">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Понятный язык</h3>
+                        <p>Мы объясняем сложные концепции простыми словами, понятными детям 10-16 лет. Никакой заумной теории — только практика!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Призыв к действию -->
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h2>Готов учиться у лучших?</h2>
+                    <p>Наши преподаватели ждут тебя на курсе! Они помогут тебе освоить Unity и Unreal Engine, создать первую игру и найти свой путь в мире геймдева.</p>
+                    <a href="#" class="cta-button" id="teachers-cta">Записаться на курс</a>
+                    <div style="margin-top: 2rem;">
+                        <p style="font-size: 1rem; color: #FFD700;">
+                            <i class="fas fa-info-circle"></i> Есть вопросы к преподавателям? Напишите им напрямую или задайте вопрос через форму на странице <a href="#" class="nav-link" data-page="contacts" style="color: #FFD700; text-decoration: underline;">Контакты</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Подвал -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GameDev Junior</h3>
+                    <p>Курсы по разработке игр для подростков 10-16 лет. Учим создавать игры на Unity и Unreal Engine.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="nav-link" data-page="main"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a href="#" class="nav-link" data-page="about"><i class="fas fa-chevron-right"></i> О курсе</a></li>
+                        <li><a href="#" class="nav-link" data-page="unity"><i class="fas fa-chevron-right"></i> Unity</a></li>
+                        <li><a href="#" class="nav-link" data-page="unreal"><i class="fas fa-chevron-right"></i> Unreal Engine</a></li>
+                        <li><a href="#" class="nav-link" data-page="teachers"><i class="fas fa-chevron-right"></i> Преподаватели</a></li>
+                        <li><a href="#" class="nav-link" data-page="contacts"><i class="fas fa-chevron-right"></i> Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Наши преподаватели</h3>
+                    <ul class="footer-links">
+                        <li><a href="#teacher1"><i class="fas fa-chevron-right"></i> Алексей Морозов</a></li>
+                        <li><a href="#teacher2"><i class="fas fa-chevron-right"></i> Кирилл Волков</a></li>
+                        <li><a href="#teacher3"><i class="fas fa-chevron-right"></i> Мария Семёнова</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 GameDev Junior. Все права защищены. Курс для подростков 10-16 лет.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Страница контактов -->
+    <div class="page" id="contacts-page">
+        <main class="container">
+            <!-- Заголовок страницы -->
+            <div class="page-header">
+                <h1>Свяжись с нами!</h1>
+                <p>Есть вопросы о курсе? Хочешь записаться или просто узнать больше? Мы всегда рады помочь и ответить на все твои вопросы!</p>
+            </div>
+
+            <!-- Основная сетка контактов -->
+            <div class="contact-grid">
+                <!-- Контактная информация -->
+                <div class="contact-info" id="contactInfo">
+                    <h2><i class="fas fa-address-card"></i> Контактная информация</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Наш адрес</h3>
+                            <p>г. Москва, ул. Игровая, д. 42</p>
+                            <p>Бизнес-центр "GameDev Plaza", офис 307</p>
+                            <p>Метро: "Проспект Геймеров"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Телефоны</h3>
+                            <p>+7 (800) 555-35-35 - Бесплатный по России</p>
+                            <p>+7 (495) 123-45-67 - Для Москвы</p>
+                            <a href="tel:+78005553535" class="contact-link">
+                                <i class="fas fa-phone-volume"></i> Позвонить нам
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Электронная почта</h3>
+                            <p>Основной: hello@gamedevjunior.ru</p>
+                            <p>Поддержка: support@gamedevjunior.ru</p>
+                            <p>Запись на курс: apply@gamedevjunior.ru</p>
+                            <a href="mailto:hello@gamedevjunior.ru" class="contact-link">
+                                <i class="fas fa-paper-plane"></i> Написать письмо
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Время работы</h3>
+                            <p>Понедельник - Пятница: 10:00 - 20:00</p>
+                            <p>Суббота: 11:00 - 18:00</p>
+                            <p>Воскресенье: выходной</p>
+                            <p class="highlight">Онлайн-поддержка: круглосуточно</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Форма обратной связи -->
+                <div class="contact-form" id="contactForm">
+                    <h2><i class="fas fa-comment-dots"></i> Форма обратной связи</h2>
+                    <form id="feedbackForm">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Ваше имя</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Как к вам обращаться?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Электронная почта</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="example@mail.ru" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="age"><i class="fas fa-child"></i> Возраст</label>
+                            <input type="number" id="age" name="age" class="form-input" placeholder="Сколько вам лет?" min="10" max="16" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject"><i class="fas fa-tag"></i> Тема сообщения</label>
+                            <select id="subject" name="subject" class="form-input" required>
+                                <option value="" disabled selected>Выберите тему</option>
+                                <option value="course">Вопрос о курсе</option>
+                                <option value="registration">Запись на курс</option>
+                                <option value="payment">Оплата курса</option>
+                                <option value="technical">Технические вопросы</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-edit"></i> Ваше сообщение</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Напишите ваш вопрос или сообщение..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Отправить сообщение
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Социальные сети -->
+            <div class="social-section" id="socialSection">
+                <h2><i class="fas fa-share-alt"></i> Мы в социальных сетях</h2>
+                <p style="text-align: center; margin-bottom: 2rem; color: #e0e0c0; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Подписывайся на наши соцсети, чтобы быть в курсе новостей, участвовать в конкурсах и общаться с другими участниками курса!
+                </p>
+                
+                <div class="social-grid">
+                    <div class="social-card">
+                        <div class="social-icon">
+                            <i class="fab fa-vk"></i>
+                        </div>
+                        <h3>ВКонтакте</h3>
+                        <p>Самая активная группа с конкурсами, новостями и общением</p>
+                        <a href="#" class="social-link">Подписаться</a>
+                    </div>
+                    
+                    <div class="social-card">
+                        <div class="social-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <h3>Telegram</h3>
+                        <p>Канал с полезными материалами и оперативными уведомлениями</p>
+                        <a href="#" class="social-link">Подписаться</a>
+                    </div>
+                    
+                    <div class="social-card">
+                        <div class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h3>YouTube</h3>
+                        <p>Бесплатные уроки, обзоры игр и трансляции по разработке</p>
+                        <a href="#" class="social-link">Подписаться</a>
+                    </div>
+                    
+                    <div class="social-card">
+                        <div class="social-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <h3>Discord</h3>
+                        <p>Чат для общения с преподавателями и другими учениками</p>
+                        <a href="#" class="social-link">Присоединиться</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="map-section" id="mapSection">
+                <h2><i class="fas fa-map"></i> Как нас найти</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3 style="color: #FFD700; margin-bottom: 1rem;">Интерактивная карта</h3>
+                        <p>Мы находимся в центре Москвы, в современном бизнес-центре "GameDev Plaza".</p>
+                        <p style="margin-top: 1rem;">Ближайшее метро: "Проспект Геймеров" (5 минут пешком)</p>
+                        <p style="margin-top: 1rem; font-size: 1rem; color: #FFA500;">
+                            <i class="fas fa-info-circle"></i> Карта загрузится здесь при подключении к интернету
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Часто задаваемые вопросы -->
+            <div class="faq-section" id="faqSection">
+                <h2><i class="fas fa-question-circle"></i> Часто задаваемые вопросы</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Можно ли пройти курс, если мне всего 10 лет?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, конечно! Наш курс специально разработан для детей от 10 до 16 лет. Все объясняется простым и понятным языком, а задания подобраны соответственно возрасту.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Нужно ли покупать специальные программы для курса?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Нет, все необходимое программное обеспечение (Unity и Unreal Engine) полностью бесплатное для обучения. Мы поможем с установкой и настройкой.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Можно ли заниматься вместе с другом?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Конечно! У нас есть специальные условия для группового обучения. Вы можете заниматься вместе и даже создать общий игровой проект!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Что делать, если я пропустил занятие?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Все занятия доступны в записи, поэтому вы можете посмотреть их в любое удобное время. Также вы всегда можете задать вопросы преподавателю в чате.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Будет ли сертификат после окончания курса?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, каждый участник, успешно завершивший курс, получает именной сертификат, который можно добавить в свое портфолио.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Подвал -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GameDev Junior</h3>
+                    <p>Курсы по разработке игр для подростков 10-16 лет. Учим создавать игры на Unity и Unreal Engine.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="nav-link" data-page="main"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a href="#" class="nav-link" data-page="about"><i class="fas fa-chevron-right"></i> О курсе</a></li>
+                        <li><a href="#" class="nav-link" data-page="teachers"><i class="fas fa-chevron-right"></i> Преподаватели</a></li>
+                        <li><a href="#" class="nav-link" data-page="contacts"><i class="fas fa-chevron-right"></i> Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-envelope"></i> hello@gamedevjunior.ru</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +7 (800) 123-45-67</a></li>
+                        <li><a href="#"><i class="fab fa-vk"></i> Мы ВКонтакте</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 GameDev Junior. Все права защищены. Курс для подростков 10-16 лет.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Сообщение об успешной отправке -->
+    <div class="overlay" id="overlay"></div>
+    <div class="success-message" id="successMessage">
+        <div class="success-icon">
+            <i class="fas fa-check"></i>
+        </div>
+        <h3>Сообщение отправлено!</h3>
+        <p>Спасибо за ваше сообщение! Мы свяжемся с вами в течение 24 часов. Обычно мы отвечаем даже быстрее!</p>
+        <button class="close-success" id="closeSuccess">Отлично!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
